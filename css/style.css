@@ -1,0 +1,31 @@
+.body {
+  width: 100%;
+}
+
+.slideshow-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slideshow-container h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#slideshow-img {
+  width: 20rem;
+  height: 10rem;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+#pic-title {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+#playButton {
+  margin-top: 10px;
+  font-size: 15px;
+}
