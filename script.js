@@ -39,7 +39,7 @@ function changePicture() {
 
 // 再生と停止の機能
 
-// スライドが再生中かどうかを確認する変数、0が
+// スライドが再生中かどうかを確認する変数
 let playingID = 0;
 
 // 関数
@@ -49,15 +49,16 @@ function playSlideshow() {
     // HTMLタグID「playButton」(ドキュメント要素)の文字列を
     // "STOP"に変更
     document.getElementById("playButton").innerHTML = "STOP";
-    //2秒ごとに関数を実行する（タイマーを確立させる）
+    //2秒ごとに関数を実行する（タイマーを確立させる）＝2秒ごとに写真をスライドさせる
     playingID = setInterval(changePicture, 2000);
   } else {
     // HTMLタグID「playButton」(ドキュメント要素)の文字列を
     // "START"に変更
     document.getElementById("playButton").innerHTML = "START";
-    // setIntarvalで確立されたタイマーを取り消しする（changePicture関数の処理解除）
+    // setIntervalで確立されたタイマーを取り消しする（changePicture関数の処理解除）
+    // =""のNUM(数字)になる、型はあるけど値がない
     clearInterval(playingID);
-    // e
+    // 元の状態に戻す＝0を代入する（元の方がNUMだからすんなり入る）
     playingID = 0;
   }
 }
